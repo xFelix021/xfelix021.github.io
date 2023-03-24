@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" >
+    <title>Startseite</title>
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/currencyConverter.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,400,0,0" />
+    <script src="./scripts/currencyConverter.js"></script>
+    <!--Apple Compatibility-->
+    <link rel="manifest" href="ios.webmanifest">
+    <link rel="apple-touch-icon" href="./images/apple-touch-icon.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Dashboard">
+</head>
+<body>
+    <div class="header"><br><h3>W&auml;hrungsrechner</h3></div>
+    <div class="body">
+        <div id="body-content">
+            <div class="fromCurrencyForm">
+                <input id="amount" type="number" placeholder="Betrag...">
+                <select id="selectCurrency" name="selectCurrency">
+                    <option value="USD">US-Dollar (USD)</option>
+                    <option value="EUR">Euro (EUR)</option>
+                    <option value="JPY">Japanischer Yen (JPY)</option>
+                    <option value="GBP">Britisches Pfund (GBP)</option>
+                    <option value="AUD">Australischer Dollar (AUD)</option>
+                    <option value="CAD">Kanadischer Dollar (CAD)</option>
+                    <option value="CHF">Schweizer Franken (CHF)</option>
+                    <option value="CNY">Chinesischer Yuan (CNY)</option>
+                    <option value="INR">Indische Rupie (INR)</option>
+                    <option value="MXN">Mexikanischer Peso (MXN)</option>
+                  </select>
+            </div><br>
+            <div class="toCurrencyForm">
+                <select id="selectCurrency2" name="selectCurrency">
+                    <option value="USD">US-Dollar (USD)</option>
+                    <option value="EUR">Euro (EUR)</option>
+                    <option value="JPY">Japanischer Yen (JPY)</option>
+                    <option value="GBP">Britisches Pfund (GBP)</option>
+                    <option value="AUD">Australischer Dollar (AUD)</option>
+                    <option value="CAD">Kanadischer Dollar (CAD)</option>
+                    <option value="CHF">Schweizer Franken (CHF)</option>
+                    <option value="CNY">Chinesischer Yuan (CNY)</option>
+                    <option value="INR">Indische Rupie (INR)</option>
+                    <option value="MXN">Mexikanischer Peso (MXN)</option>
+                  </select>
+                  <button type="submit" id="changeCurrency" class="material-symbols-outlined">arrow_forward</button>
+            </div><br>
+            <div id="displayCurrencyCalculation">
+                <b id="fromCurrencyFormValue">nullX</b> entsprechen <b id="toCurrencyFormValue">nullX</b>.
+            </div><br>
+            <button onclick="location.href='./index.html'">Startseite</button>
+        </div>
+    </div>
+</body>
+</html>

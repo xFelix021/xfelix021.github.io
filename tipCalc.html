@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" >
+    <title>Startseite</title>
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/tipCalc.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,400,0,0" />
+    <script src="./scripts/tipCalc.js"></script>
+    <!--Apple Compatibility-->
+    <link rel="manifest" href="ios.webmanifest">
+    <link rel="apple-touch-icon" href="./images/apple-touch-icon.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Dashboard">
+</head>
+<body>
+    <div class="header"><br><h3 style="font-size: 27px;">Trinkgeld-Rechner</h3></div>
+    <div class="body">
+        <div id="body-content">
+            <div class="tipForm">
+                <input id="billAmount" type="number" placeholder="Betrag eingeben...">
+                <button type="submit" id="moneyPlaceholder">€</button>
+                <button type="submit" id="next1Btn" class="material-symbols-outlined">arrow_forward</button>
+            </div><br>
+            <div class="percentageForm" id="percentageForm">
+                <input id="percentageAmount" type="number" placeholder="Prozentzahl angeben...">
+                <button type="submit" id="moneyPlaceholder">%</button>
+                <button type="submit" id="next2Btn" class="material-symbols-outlined" style="color: green; scale: 1;">check</button>
+            </div><br>
+            <div id="displayCalculation">
+                <b>W&auml;hrung: </b><span id="displayCurrency">€/$</span><br>
+                <b>Betrag auf der Rechnung: </b><span id="displayAmount">null€/$</span><br>
+                <b>Prozent: </b><span id="displayPercent">null%</span><br>
+                <b>Trinkgeld: </b><span id="displayTipAmount">null€/$</span><br>
+                <b>Summe: </b><span id="displayTotal">null€/$</span><br>
+            </div><br>
+            <button onclick="location.href='./index.html'">Startseite</button>
+        </div>
+    </div>
+</body>
+</html>

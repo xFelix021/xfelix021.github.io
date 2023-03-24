@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" >
+    <title>Startseite</title>
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/weather.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,400,0,0" />
+    <script src="./scripts/weather.js"></script>
+    <!--Apple Compatibility-->
+    <link rel="manifest" href="ios.webmanifest">
+    <link rel="apple-touch-icon" href="./images/apple-touch-icon.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Dashboard">
+</head>
+<body>
+    <div class="header"><br><h3>Wetter</h3></div>
+    <div class="body">
+        <div id="body-content">
+            <div class="searchForm">
+                <input id="cityName" type="text" placeholder="Stadt eingeben...">
+                <button type="submit" id="searchBtn" class="material-symbols-outlined">search</button>
+            </div>
+            <div id="weatherDisplay">
+                <h3 id="cityNameDisplay">PLACEHOLDER</h3><br>
+                <img src="https://openweathermap.org/img/wn/10d@2x.png" style="scale: 1; position: absolute; left: 0px; top: 90px;" id="weatherIcon"><br><br>
+                <b id="displayDescription">Bewölkt</b><br>
+                <b>Temperatur: </b><span id="displayTemperature"></span> (Fühlt sich an wie <b id="displayFeelsLike"></b><b>°C</b>)<br>
+                <b>Luftfeuchtigkeit: </b><span id="displayHumidity"></span>%<br>
+                <b>Windgeschwindigkeit: </b><span id="displayWindspeed"></span>
+            </div>
+            <br><br>
+            <button onclick="location.href='./index.html'">Startseite</button>
+        </div>
+    </div>
+</body>
+</html>

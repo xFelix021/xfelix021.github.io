@@ -1,0 +1,38 @@
+#cityName {
+    border-radius: 50px;
+    height: 40px;
+    width: 280px;
+    border: none;
+    padding: 0.5em 1em;
+    transition: 0.2s ease-in-out;
+    background-color: rgb(44, 44, 44);
+    color: white;
+    font-size: 15px;
+}
+
+#cityName::placeholder {
+    color: white;
+}
+
+#cityName::placeholder::-webkit-input-placeholder {
+    color: white;
+}
+
+#searchBtn {
+    border-radius: 50px;
+    height: 55px;
+    width: 55px;
+    border: none;
+    transition: 0.2s ease-in-out;
+    background-color: rgb(44, 44, 44);
+    color: white;
+    margin-left: 10px;
+}
+
+.searchForm {
+    display: flex;
+}
+
+#weatherDisplay {
+    margin: 10px;
+}

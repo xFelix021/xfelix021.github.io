@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" >
+    <title>Startseite</title>
+    <link rel="stylesheet" href="./styles/index.css">
+    <script src="./scripts/index.js"></script>
+    <!--Apple Compatibility-->
+    <link rel="manifest" href="ios.webmanifest">
+    <link rel="apple-touch-icon" href="./images/apple-touch-icon.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Dashboard">
+</head>
+<body>
+    <div class="header"><br><h3 id="displayTime"></h3></div>
+    <div class="body">
+        <div id="body-content">
+            <div class="window">
+                <h2>Wetter in Herford</h2>
+                <h3 id="displayWeatherDESC"></h3>
+                <b>Temperatur: </b><span id="displayWeatherTEMP"></span> (Fühlt sich an wie <b id="displayWeatherFL"></b><b>°C</b>)<br>
+                <b>Luftfeuchtigkeit: </b><span id="displayWeatherHY"></span>%<br>
+                <b>Windgeschwindigkeit: </b><span id="displayWeatherWS"></span>
+                <br><br><em class="information">Wetterdaten von anderen Städten, können unter dem Tab "Wetter" gefunden werden.</em>
+            </div>
+            <hr>
+            <button onclick="location.href='./weather.html'">Wetter</button><br>
+            <button onclick="location.href='./tipCalc.html'">Trinkgeld-Rechner</button><br>
+            <button onclick="location.href='./todo.html'">ToDo-Liste</button><br>
+            <button onclick="location.href='./stopwatch.html'">Stoppuhr</button><br>
+            <button onclick="location.href='./calculator.html'">Taschenrechner</button><br>
+            <button onclick="location.href='./currencyConverter.html'">W&auml;hrungsrechner</button><br>
+            <button onclick="location.href='./passwordGenerator.html'">Passwort-Generator</button><br>
+        </div>
+    </div>
+</body>
+</html>

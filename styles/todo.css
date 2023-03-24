@@ -1,0 +1,71 @@
+.addToDo {
+    display: flex;
+}
+
+#inputValue {
+    border-radius: 50px;
+    height: 40px;
+    width: 260px;
+    border: none;
+    padding: 0.5em 1em;
+    transition: 0.2s ease-in-out;
+    background-color: rgb(44, 44, 44);
+    color: white;
+    font-size: 15px;
+}
+
+#inputValue::placeholder {
+    color: white;
+}
+
+#inputBtn {
+    border-radius: 50px;
+    height: 55px;
+    width: 55px;
+    border: none;
+    transition: 0.2s ease-in-out;
+    background-color: rgb(44, 44, 44);
+    color: white;
+    margin-left: 10px;
+
+    justify-content: center;
+    text-align: center;
+    display: flex;
+}
+
+#ToDoDone {
+    border-radius: 50px;
+    height: 55px;
+    width: 55px;
+    border: none;
+    transition: 0.2s ease-in-out;
+    background-color: rgb(44, 44, 44);
+    color: white;
+    margin-left: 10px;
+
+    justify-content: center;
+    text-align: center;
+    display: flex;
+}
+
+#ToDoText {
+    border-radius: 50px;
+    height: 55px;
+    width: fit-content;
+    font-size: 14px;
+    border: none;
+    transition: 0.2s ease-in-out;
+    background-color: rgb(44, 44, 44);
+    color: white;
+    margin-left: 10px;
+
+    justify-content: center;
+    text-align: center;
+    display: flex;
+}
+
+#todo {
+    display: flex;
+    text-align: center;
+    margin: 5px;
+}

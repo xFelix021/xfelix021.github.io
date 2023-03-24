@@ -1,0 +1,71 @@
+#amount {
+    border-radius: 50px;
+    height: 40px;
+    width: 120px;
+    border: none;
+    padding: 0.5em 1em;
+    transition: 0.2s ease-in-out;
+    background-color: rgb(44, 44, 44);
+    color: white;
+    font-size: 15px;
+}
+
+#amount::placeholder {
+    color: white;
+}
+
+#changeCurrency {
+    border-radius: 50px;
+    height: 55px;
+    width: 55px;
+    border: none;
+    transition: 0.2s ease-in-out;
+    background-color: rgb(44, 44, 44);
+    color: white;
+    margin-left: 10px;
+}
+
+#selectCurrency {
+    border-radius: 50px;
+    height: 55px;
+    width: 210px;
+    border: none;
+    transition: 0.2s ease-in-out;
+    background-color: rgb(44, 44, 44);
+    color: white;
+    margin-left: 10px;
+
+    text-align: center;
+    justify-content: center;
+
+    -webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	padding-right: 25px;
+}
+
+#selectCurrency2 {
+    border-radius: 50px;
+    height: 55px;
+    width: 310px;
+    border: none;
+    transition: 0.2s ease-in-out;
+    background-color: rgb(44, 44, 44);
+    color: white;
+
+    text-align: center;
+    justify-content: center;
+
+    -webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	padding-right: 25px;
+}
+
+.fromCurrencyForm, .toCurrencyForm {
+    display: flex;
+}
+
+#currencyDisplay {
+    margin: 10px;
+}

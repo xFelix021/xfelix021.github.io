@@ -1,0 +1,20 @@
+{
+    "name": "Dashboard",
+    "short_name": "Dashboard",
+    "description": "Dashboard",
+    "theme_color": "#3d66fc",
+    "icons": [
+        {
+            "src": "./images/apple-touch-icon.png",
+            "sizes": "150x150",
+            "type": "image/png"
+        }
+    ],
+    "orientation": "portrait-primary",
+    "display": "standalone",
+    "scope": "/",
+    "start-url": "/index.html",
+    "background_color": "#3d66fc",
+    "dir": "ltr",
+    "lang": "de-DE"
+}
