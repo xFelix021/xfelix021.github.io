@@ -7,7 +7,7 @@
     <title>Startseite</title>
     <link rel="stylesheet" href="./styles/index.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,400,0,0" />
-    <script src="./scripts/index.js"></script>
+    <script src="./scripts/settings.js"></script>
     <!--Apple Compatibility-->
     <link rel="manifest" href="ios.webmanifest">
     <link rel="apple-touch-icon" href="./images/apple-touch-icon.png">
@@ -16,15 +16,25 @@
     <meta name="apple-mobile-web-app-title" content="Dashboard">
 </head>
 <body>
-    <div class="header"><br><h3>Updates</h3></div>
+    <div class="header"><br><h3>Einstellungen</h3></div>
     <div class="body">
         <div id="body-content">
-            <!--Announcements-->
-            <!-- <br><hr> (nur aktiv, wenn Announcement!!)-->
-            <!--Updates-->
-            <br><div class="update"> <b id="header">Version: 1.1</b> <br> <label for="header">Dienstag, 18.04.2023 <br><br><div>- Einstellungen Tab hinzugef&uuml;gt<br>- Einstellungen hinzugef&uuml;gt<br>- Bug Fixes</div></label> </div>
-            <br><div class="update"> <b id="header">Version: 1.0</b> <br> <label for="header">Mittwoch, 29.03.2023 <br><br><div>- Update Tab hinzugef&uuml;gt<br>- Footer hinzugef&uuml;gt<br>- neues Logo</div></label> </div>
+            <!--weatherFavourites-->
+            <div id="weatherFavourites"  style="display: none;">
+                <h3>Wetterfavouriten konfigurieren</h3>
+                <div class="searchForm">
+                    <input type="text" name="" id="searchBox" placeholder="Stadt eingeben...">
+                    <button id="searchBtn" class="material-symbols-outlined">add</button>
+                </div>
+            </div>
+            <h3>Verknüpfungen</h3>
+            <!--Button Links-->
+            <button onclick="location.href='./updates.html'">Update-Logs</button><br>
         </div>
+    </div>
+    <div id="deviceInformation">
+        <b id="devicePlatform"></b><br>
+        <b id="appVersion"></b><br>
     </div>
     <div id="footerStyle">
         <button class="material-symbols-outlined" id="homePage" onclick="location.href='./index.html'">home</button>

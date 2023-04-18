@@ -33,5 +33,6 @@ function weatherListener() {
 }
 
 window.addEventListener("load", function() {
+    console.log("Script loaded!")
     weatherListener()
 })
